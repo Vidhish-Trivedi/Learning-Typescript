@@ -1,29 +1,26 @@
 const oldCivic = {
     name: "civic",
-    year: 2000,
-    broken: true
+    year: new Date(),
+    broken: true,
+    summary(): string {
+        return(`Name: ${this.name}\nYear: ${this.year}\nIs broken: ${this.broken}`)
+    }
 };
-
-// const logVehicle = (vehicle: {name: string, year: number, broken: boolean}): void => {
-//     console.log(`Name: ${vehicle.name}`);
-//     console.log(`Year: ${vehicle.year}`);
-//     console.log(`Is broken: ${vehicle.broken}`);
-// };
-// logVehicle(oldCivic);
 
 interface Vehicle{
     name: string;
-    year: number;
+    year: Date;
     broken: boolean;
+    summary(): string;    // func(): return_type;
 };
 // Note that the names of the properties should match the names of the properties of the object
 // (we can not, say, use isBroken instead of broken at just one place).
 
 
+// If an object satisfies the Vehicle interface definition and in addition also has more properties,
+// it will still work without aNy errors.
 const logVehicle = (vehicle: Vehicle): void => {
-    console.log(`Name: ${vehicle.name}`);
-    console.log(`Year: ${vehicle.year}`);
-    console.log(`Is broken: ${vehicle.broken}`);
+    console.log(vehicle.summary());
 };
 
 logVehicle(oldCivic);
