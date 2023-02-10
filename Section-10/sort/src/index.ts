@@ -5,6 +5,7 @@ class Sorter{
         this.collection = collection;  
     };
 
+    // Bubble Sort.
     public sort(): number[] {
         let tmp: number[] = this.collection;
         for(let i = 0; i < tmp.length - 1; i++){
