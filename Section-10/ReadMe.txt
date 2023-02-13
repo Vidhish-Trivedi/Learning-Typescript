@@ -18,5 +18,23 @@ NOTES:
 	
 	Bubble sort implementation can not swap chars in a string,
 	as they are immutable. Also, our comparison condition in the "if"
-	statement also needs to change. 
+	statement also needs to change.
+
+	UPDATING THE BUBBLE SORT IMPLEMENTATION:
+		TYPE GUARDS:
+			Used to clarify the type we are working with, when using
+			union of types (like: number | string).
+
+			FOR TYPESCRIPT:
+				Narrow type of a value to a primitive type: number, string, boolean, symbol.
+				(typeof)
+			
+				Narrow type of other values: "Every other value that is created with a constructor function."
+				(instanceof)
+			
+			Using type guards leads to code repetition.
+		
+		
+
+
 
