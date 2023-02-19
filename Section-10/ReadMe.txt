@@ -36,8 +36,15 @@ NOTES:
 		
 		SOLUTION: Abstraction of implementation. --> Using interfaces.
 
-	LINKED LIST:
+	LINKED LIST,
+	INHERITANCE: <...>Collection classes will inherit from the Sortable class,
+	ABSTRACT CLASSES
+
+	INTERFACES v/s ABSTRACT CLASSES:
+		Interfaces promote loose coupling of classes, set up a contract between
+		different classes, used when we have very different objects that we want
+		to work together.
+
+		Abstract classes promote strong coupling of classes, set up a contract between
+		different classes, used when are trying to build up a definition of an object.		
 		
-
-
-
