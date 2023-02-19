@@ -34,7 +34,9 @@ NOTES:
 			
 			Using type guards leads to code repetition.
 		
-		SOLUTION: Abstraction of implementation.
+		SOLUTION: Abstraction of implementation. --> Using interfaces.
+
+	LINKED LIST:
 		
 
 

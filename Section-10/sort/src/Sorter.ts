@@ -1,4 +1,4 @@
-interface Sortable{
+export interface Sortable{
     length: number;
     compare(i: number, j: number): boolean;     // Returns true if we need to swap i, j
     swap(i: number, j: number): void;
